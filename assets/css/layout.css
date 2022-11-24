@@ -1,0 +1,29 @@
+body{
+    margin:0 2%;
+}
+header ul{
+    display: flex;
+    border-bottom:1px solid #000;
+}
+header nav li{
+
+}
+header nav a{
+    display: block;
+    line-height: 50px;
+    padding:5px 20px;
+}
+header nav ul ul a{
+    display: block;
+    line-height: 30px;
+    padding:5px 10px;
+}
+
+header nav>ul ul{
+    display:none;
+    position: absolute;
+    width: 500px;
+}
+header nav> ul>li.on ul{
+    display:block;
+}

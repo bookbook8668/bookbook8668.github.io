@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-                    <html lang="ko">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -17,12 +17,14 @@
                 <li><a href="/sensereader/chapter8.html">sense reader</a></li>
                 <li><a href="/NVDA/keyCommands.html">NVDA</a></li>
                 <li><a href="/chromekey.html">Chrome</a></li>
-                <li><a href="./aria-practices-main/examples/index.html">WAI-ARIA</a></li>
-                <li><a href="/wai-aria/menubar.html">menu Bar</a></li>
-                <li><a href="/wai-aria/tabs.html">Tabs</a></li>
-                <li><a href="/wai-aria/treeview.html">Tree 
-                    view
-                </a></li>
+                <li><a href="./aria-practices-main/examples/index.html">WAI-ARIA</a>
+                    <ul>
+                        <li><a href="/wai-aria/menubar.html">menu Bar</a></li>
+                        <li><a href="/wai-aria/tabs.html">Tabs</a></li>
+                        <li><a href="/wai-aria/treeview.html">Tree view</a></li>
+                        <li><a href="./aria-practices-main/examples/index.html">WAI-ARIA</a>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -37,6 +39,20 @@
         <p>Copyright by Cjh</p>
         <address></address>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            // alert("Hello")
+            $("header nav>ul>li").on("mouseenter keyup", function(){
+                $(this).addClass("on").siblings().removeClass("on")
+            })
+            $("header nav").on("mouseleave blur", function(){
+                $("header nav>ul>li").removeClass("on")
+            })
+            // $("header nav>ul>li>a")
+            // $("header nav>ul>li>ul")
+        })
+    </script>
 </body>
 
 </html>
