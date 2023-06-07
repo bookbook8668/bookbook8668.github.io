@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document조제 호랑이 그리고 물고기들</title>
-    <link rel="stylesheet" href="/assets/css/default.css">
-</head>
-
-<body>
-    <div class="skip"><a href="">본문 바로가기</a></div>
-    <header>
+    <head>
+        <title>내 홈페이지 샘플</title>
+        <style>
+          /* CSS for submenus */
+          .submenu {
+            display: none;
+          }
+      
+          /* CSS for active submenu */
+          .active {
+            display: block;
+          }
+        </style>
+        <script>
+          // JavaScript for submenu functionality
+          function showSubmenu(submenuId) {
+            // Hide all submenus
+            var submenus = document.getElementsByClassName('submenu');
+            for (var i = 0; i < submenus.length; i++) {
+              submenus[i].style.display = 'none';
+            }
+      
+            // Show the selected submenu
+            document.getElementById(submenuId).style.display = 'block';
+          }
+        </script>
+      </head>
+      <body>
         <nav>
-            <ul>
-                <li><a href="/sensereader/chapter8.html">sense reader</a></li>
-                <li><a href="/NVDA/keyCommands.html">NVDA</a></li>
-                <li><a href="/chromekey.html">Chrome</a></li>
-                <li><a href="./aria-practices-main/examples/index.html">WAI-ARIA</a>
-                    <ul>
-                        <li><a href="/wai-aria/menubar.html">menu Bar</a></li>
-                        <li><a href="/wai-aria/tabs.html">Tabs</a></li>
-                        <li><a href="/wai-aria/treeview.html">Tree view</a></li>
-                        <li><a href="./aria-practices-main/examples/index.html">WAI-ARIA</a>
-                    </ul>
-                </li>
-            </ul>
+          <ul>
+            <li><a href="#" onclick="showSubmenu('submenu1')">HTML</a></li>
+                                 <li><a href="#" onclick="showSubmenu('submenu2')">CSS</a></li>
+            <li><a href="#" onclick="showSubmenu('submenu3')">Menu 3</a></li>
+            <li><a href="#" onclick="showSubmenu('submenu4')">Menu 4</a></li>
+            <li><a href="#" onclick="showSubmenu('submenu5')">Menu 5</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h2>공지사항</h2>
-            <h2>Java script 연습</h2>
-        </section>
-    </main>
-
-    <footer>
-        <p>Copyright by Cjh</p>
-        <address></address>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            // alert("Hello")
-            $("header nav>ul>li").on("mouseenter keyup", function(){
-                $(this).addClass("on").siblings().removeClass("on")
-            })
-            $("header nav").on("mouseleave blur", function(){
-                $("header nav>ul>li").removeClass("on")
-            })
-            // $("header nav>ul>li>a")
-            // $("header nav>ul>li>ul")
-        })
-    </script>
-</body>
-
-</html>
+      
+        <!-- Submenu 1 -->
+        <div id="submenu1" class="submenu">
+          <h2>Submenu 1</h2>
+          <p>This is the content of submenu 1.</p>
+        </div>
+      
+        <!-- Submenu 2 -->
+        <div id="submenu2" class="submenu">
+          <h2>Submenu 2</h2>
+          <p>This is the content of submenu 2.</p>
+        </div>
+      
+        <!-- Submenu 3 -->
+        <div id="submenu3" class="submenu">
+          <h2>Submenu 3</h2>
+          <p>This is the content of submenu 3.</p>
+        </div>
+      
+        <!-- Submenu 4 -->
+        <div id="submenu4" class="submenu">
+          <h2>Submenu 4</h2>
+          <p>This is the content of submenu 4.</p>
+        </div>
+      
+        <!-- Submenu 5 -->
+        <div id="submenu5" class="submenu">
+          <h2>Submenu 5</h2>
+          <p>This is the content of submenu 5.</p>
+        </div>
+      </body>
+      </html>
+      

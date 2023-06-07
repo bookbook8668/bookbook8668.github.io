@@ -1,0 +1,19 @@
+$border-size: 5px solid red;
+#list{
+    display: block;
+    font-size: 1em;
+    
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        font-size: 1.5em;
+    border: $border-size                
+        
+        
+      }
+    }
+  }
+  

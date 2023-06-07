@@ -1,0 +1,14 @@
+#list {
+  display: block;
+  font-size: 1em;
+}
+#list li {
+  display: inline-block;
+}
+#list li a {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5em;
+  border: 5px solid red;
+}/*# sourceMappingURL=style1.css.map */
