@@ -1,72 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>내 홈페이지 샘플</title>
-        <style>
-          /* CSS for submenus */
-          .submenu {
-            display: none;
-          }
-      
-          /* CSS for active submenu */
-          .active {
-            display: block;
-          }
-        </style>
-        <script>
-          // JavaScript for submenu functionality
-          function showSubmenu(submenuId) {
-            // Hide all submenus
-            var submenus = document.getElementsByClassName('submenu');
-            for (var i = 0; i < submenus.length; i++) {
-              submenus[i].style.display = 'none';
-            }
-      
-            // Show the selected submenu
-            document.getElementById(submenuId).style.display = 'block';
-          }
-        </script>
-      </head>
-      <body>
-        <nav>
-          <ul>
-            <li><a href="#" onclick="showSubmenu('submenu1')">HTML</a></li>
-                                 <li><a href="#" onclick="showSubmenu('submenu2')">CSS</a></li>
-            <li><a href="#" onclick="showSubmenu('submenu3')">Menu 3</a></li>
-            <li><a href="#" onclick="showSubmenu('submenu4')">Menu 4</a></li>
-            <li><a href="#" onclick="showSubmenu('submenu5')">Menu 5</a></li>
-          </ul>
-        </nav>
-      
-        <!-- Submenu 1 -->
-        <div id="submenu1" class="submenu">
-          <h2>Submenu 1</h2>
-          <p>This is the content of submenu 1.</p>
-        </div>
-      
-        <!-- Submenu 2 -->
-        <div id="submenu2" class="submenu">
-          <h2>Submenu 2</h2>
-          <p>This is the content of submenu 2.</p>
-        </div>
-      
-        <!-- Submenu 3 -->
-        <div id="submenu3" class="submenu">
-          <h2>Submenu 3</h2>
-          <p>This is the content of submenu 3.</p>
-        </div>
-      
-        <!-- Submenu 4 -->
-        <div id="submenu4" class="submenu">
-          <h2>Submenu 4</h2>
-          <p>This is the content of submenu 4.</p>
-        </div>
-      
-        <!-- Submenu 5 -->
-        <div id="submenu5" class="submenu">
-          <h2>Submenu 5</h2>
-          <p>This is the content of submenu 5.</p>
-        </div>
-      </body>
-      </html>
-      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Elements</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Elements</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#functions">Functions</a></li>
+      <li><a href="#conditional-statements">Conditional Statements</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#objects">Objects</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="variables">
+      <h2>Variables</h2>
+      <p>Variables are used to store data values in JavaScript. They can hold various types of data such as numbers, strings, or objects.</p>
+    </section>
+
+    <section id="functions">
+      <h2>Functions</h2>
+      <p>Functions are reusable blocks of code that perform a specific task. They can be defined and called to execute the code inside them.</p>
+    </section>
+
+    <section id="conditional-statements">
+      <h2>Conditional Statements</h2>
+      <p>Conditional statements allow the execution of different actions based on different conditions. Examples include if-else statements and switch statements.</p>
+    </section>
+
+    <section id="loops">
+      <h2>Loops</h2>
+      <p>Loops are used to repeatedly execute a block of code until a certain condition is met. Common loop types in JavaScript are for loops, while loops, and do-while loops.</p>
+    </section>
+
+    <section id="objects">
+      <h2>Objects</h2>
+      <p>Objects are complex data types that can hold properties and methods. They are used to represent real-world entities and organize related data and functionality.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 JavaScript Elements. All rights reserved.</p>
+  </footer>
+</body>
+</html>
